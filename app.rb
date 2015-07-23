@@ -1,4 +1,4 @@
-require 'Bundler'
+require 'bundler'
 Bundler.require
 
 # http://localhost/
@@ -9,5 +9,5 @@ end
 
 # http://localhost/api/awesome/
 get '/api/awesome' do
-  #do something else
+  {:leonardo => 'blue', :raphael => 'red', :michaelangelo => 'orange', :donatello => 'purple'}.to_json
 end
